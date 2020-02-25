@@ -1,4 +1,6 @@
 .*
+*.config.js
 .*/
 tests/
-*.config.js
+storybook-static/
+docs/
