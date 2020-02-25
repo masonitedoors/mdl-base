@@ -1,0 +1,153 @@
+// Options
+//
+// Configurable developer options when importing Base UI SCSS.
+
+$import-font: true !default;
+
+// Colors
+//
+// Define our color names.
+// These should never be hardcoded outside of a css variable declaration.
+
+$color-limerick: #99c221;
+$color-deepgrey: #53565a;
+$color-slategrey: #7c878e;
+$color-khaki: #b8b298;
+$color-silver: #ddd;
+$color-burntorange: #c33;
+$color-teal: #069;
+$color-aqua: #0097a9;
+$color-islandblue: #369;
+$color-burgundy: #7e2d40;
+$color-night: #000;
+$color-onyx: #343639;
+$color-blackolive: #393c40;
+$color-pastelgrey: #ccc;
+$color-grey: #f3f3f3;
+$color-snow: #fafafa;
+$color-white: #fff;
+$color-blue: #5188f3;
+$color-blueberry: #4d82e9;
+$color-science-blue: #0366d6;
+$color-outerspace: #4b4b4b;
+$color-rust: #d11818;
+$color-goldenrod: #edd853;
+$color-taupegrey: #938b82;
+$color-deepblend: linear-gradient(0deg, $color-blackolive 0%, $color-deepgrey 100%);
+
+// Spacing
+//
+// Define our hard values used for spacing.
+
+$spacer-base: 0.25rem;
+
+// CSS Variables
+//
+// Define our root CSS variables.
+
+$root-css-vars: (
+  --mdl-state-color-info: $color-science-blue,
+  --mdl-state-color-success: $color-limerick,
+  --mdl-state-color-warning: $color-goldenrod,
+  --mdl-state-color-error: $color-rust,
+  --mdl-bg-color: $color-white,
+  --mdl-text-color: $color-deepgrey,
+  --mdl-link-color: $color-science-blue,
+  --mdl-link-hover-color: $color-science-blue,
+  --mdl-caption-color: $color-slategrey,
+  --mdl-btn-color: $color-deepgrey,
+  --mdl-btn-bg-color: $color-snow,
+  --mdl-btn-hover-color: $color-deepgrey,
+  --mdl-btn-hover-bg-color: darken($color-snow, 10%),
+  --mdl-btn-primary-color: $color-night,
+  --mdl-btn-primary-bg-color: $color-limerick,
+  --mdl-btn-primary-hover-color: $color-night,
+  --mdl-btn-primary-hover-bg-color: darken($color-limerick, 5%),
+  --mdl-btn-secondary-color: $color-white,
+  --mdl-btn-secondary-bg-color: $color-deepgrey,
+  --mdl-btn-secondary-hover-color: $color-white,
+  --mdl-btn-secondary-hover-bg-color: darken($color-deepgrey, 10%),
+  --mdl-form-control-color: $color-night,
+  --mdl-form-control-bg-color: $color-white,
+  --mdl-form-control-font-size: 14px,
+  --mdl-form-control-height: 2.25rem,
+  --mdl-form-control-padding-x: 0.5rem,
+  --mdl-form-control-padding-y: 0.25rem,
+  --mdl-form-control-label-color: var(--mdl-text-color),
+  --mdl-form-control-label-font-size: 11px,
+  --mdl-form-control-label-height: 20px,
+  --mdl-card-bg-color: $color-white,
+  --mdl-card-box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.15),
+  --mdl-card-color: var(--mdl-text-color),
+  --mdl-image-overlay-color: $color-white,
+  --mdl-image-overlay-bg-color: rgba($color-night, 0.5),
+);
+
+// Dark Mode CSS Variables
+//
+// Define our root CSS variables.
+
+$dark-mode-css-vars: (
+  --mdl-bg-color: $color-onyx,
+);
+
+// Typography
+//
+// Define our font related vars.
+
+$fluid-type-min-screen: 20rem;
+$fluid-type-max-screen: 50rem;
+$fluid-type-min-font: 0.8rem;
+$fluid-type-max-font: 1rem;
+$font-url: 'https://cloud.typography.com/7038756/6738972/css/fonts.css';
+$font-family-base: 'Gotham SSm A', 'Gotham SSm B', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Helvetica, Arial, sans-serif;
+$font-family-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.825rem;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+@include _assert-ascending($container-max-widths, '$container-max-widths');
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12;
+$grid-gutter-width: 1rem;
+$grid-row-columns: 6;
+
+// Container padding
+
+$container-padding-x: ($grid-gutter-width / 2) !default;

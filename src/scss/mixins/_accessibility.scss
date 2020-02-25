@@ -1,0 +1,43 @@
+/// Only display content to screen readers
+///
+/// @link https://a11yproject.com/posts/how-to-hide-content/
+/// @link https://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+///
+@mixin visually-hidden {
+  position: absolute !important; // stylelint-disable-line declaration-no-important
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  overflow: hidden;
+  word-wrap: normal !important; // stylelint-disable-line declaration-no-important
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+%visually-hidden {
+  @include visually-hidden;
+}
+
+/// Use in conjunction with .visually-hidden to only display content when it's focused.
+///
+/// Useful for "Skip to main content" links;
+///
+/// @link https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+///
+@mixin visually-hidden-unless-focused {
+  &:focus {
+    position: static !important; // stylelint-disable-line declaration-no-important
+    width: auto;
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+    clip: auto;
+    clip-path: unset;
+  }
+}
+
+%visually-hidden-unless-focused {
+  @include visually-hidden-unless-focused;
+}

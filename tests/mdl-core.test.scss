@@ -1,0 +1,8 @@
+// Load our SCSS unit testing library.
+@import 'true';
+
+// Load our mdl-core library.
+@import '../src/scss/mdl-core.scss';
+
+// Load our mixin unit tests.
+@import 'mixins';

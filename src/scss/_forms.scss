@@ -1,0 +1,65 @@
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: var(--mdl-form-control-height);
+  padding: var(--mdl-form-control-padding-y) var(--mdl-form-control-padding-x);
+  color: var(--mdl-form-control-color);
+  font-size: var(--mdl-form-control-font-size);
+  line-height: var(--mdl-form-control-height);
+  background-color: var(--mdl-form-control-bg-color);
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+  -webkit-appearance: none;
+}
+
+.floating-label {
+  position: relative;
+  padding-top: var(--mdl-form-control-label-height);
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding-right: var(--mdl-form-control-padding-x);
+    padding-left: var(--mdl-form-control-padding-x);
+    color: var(--mdl-form-control-label-color);
+    font-size: var(--mdl-form-control-label-font-size);
+    line-height: var(--mdl-form-control-label-height);
+    transform: scale(0.9);
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: transform 0.25s, opacity 0.18s;
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+    pointer-events: none;
+  }
+
+  &__input {
+    position: relative;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus + .floating-label__label,
+    &:not(:placeholder-shown) + .floating-label__label {
+      transform: translateY(calc(var(--mdl-form-control-height) * -1)) scale(1);
+      opacity: 1;
+    }
+  }
+}

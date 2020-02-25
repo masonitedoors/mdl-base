@@ -1,0 +1,7 @@
+:root {
+  @include make-css-vars($root-css-vars);
+}
+
+[data-theme='dark'] {
+  @include make-css-vars($dark-mode-css-vars);
+}

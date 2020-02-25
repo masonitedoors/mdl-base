@@ -1,0 +1,42 @@
+.sbdocs-content {
+  max-width: 1000px !important; /* stylelint-disable-line declaration-no-important */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  @media (min-width: 900px) {
+    padding-right: 5rem !important; /* stylelint-disable-line declaration-no-important */
+    padding-left: 5rem !important; /* stylelint-disable-line declaration-no-important */
+  }
+}
+
+.sbdocs-preview {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  @media (min-width: 900px) {
+    max-width: calc(100% + 20rem) !important; /* stylelint-disable-line declaration-no-important */
+    margin-right: -5rem !important; /* stylelint-disable-line declaration-no-important */
+    margin-left: -5rem !important; /* stylelint-disable-line declaration-no-important */
+  }
+}
+
+.sbdocs-h2 {
+  border-bottom: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.mock-column-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  border: 1px dashed #c7c7c7;
+  border-radius: 0.25rem;
+}
+
+// Add some padding to preview area to prevent box shadows getting chopped.
+#root {
+  padding: 20px; // Using pixels here in order to match the spacing of the underlying storybook grid that a user can toggle.
+}
+
+// Make our preview background transparent so the user can select their own background.
+body {
+  background-color: transparent !important; /* stylelint-disable-line declaration-no-important */
+}
