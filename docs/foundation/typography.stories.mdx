@@ -1,15 +1,17 @@
 import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
-<Meta title="Foundation|Typography" />
+<Meta title="Foundation/Typography" />
 
 # Typography
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <p>
     Here is a paragraph containing a <a href="https://example.org">Link</a>.
   </p>
-`}>
+`}
+>
   <Story name="General" height="250px">
     {`
       <p>
@@ -25,14 +27,16 @@ These are basics that are used for internal and external projects. But, the exte
 
 ### Base Headings
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <h1>Header one</h1>
   <h2>Header two</h2>
   <h3>Header three</h3>
   <h4>Header four</h4>
   <h5>Header five</h5>
   <h6>Header six</h6>
-`}>
+`}
+>
   <Story name="Base Headings" height="250px">
     {`
       <h1>Header one</h1>
@@ -49,14 +53,16 @@ These are basics that are used for internal and external projects. But, the exte
 
 .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <p class="h1">Paragraph using .h1</p>
   <p class="h2">Paragraph using .h2</p>
   <p class="h3">Paragraph using .h3</p>
   <p class="h4">Paragraph using .h4</p>
   <p class="h5">Paragraph using .h5</p>
   <p class="h6">Paragraph using .h6</p>
-`}>
+`}
+>
   <Story name="Heading Classes" height="200px">
     {`
       <p class="h1">Paragraph using .h1</p>
@@ -71,10 +77,12 @@ These are basics that are used for internal and external projects. But, the exte
 
 ### Mega Class
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <p class="h1 mega">Paragraph using .h1 + .mega</p>
   <p class="h2 mega">Paragraph using .h2 + .mega</p>
-`}>
+`}
+>
   <Story name="Mega Class" height="140px">
     {`
       <p class="h1 mega">Paragraph using .h1 + .mega</p>
@@ -85,11 +93,13 @@ These are basics that are used for internal and external projects. But, the exte
 
 ## Blockquotes
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <blockquote>
     <p class="blockquote">Show mangled quartz flip vibe exactly</p>
   </blockquote>
-`}>
+`}
+>
   <Story name="Blockquote" height="100px">
     {`
       <blockquote>

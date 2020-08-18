@@ -1,12 +1,13 @@
 import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
 
-<Meta title="Components|Tile" />
+<Meta title="Components/Tile" />
 
 # Tile
 
 Tiles are containers that would hold icons and or text. Smaller than cards, tiles provide a way to **display content in a simple way**.
 
-<Preview mdxSource={`
+<Preview
+  mdxSource={`
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3">
@@ -35,7 +36,8 @@ Tiles are containers that would hold icons and or text. Smaller than cards, tile
       </div>
     </div>
   </div>
-`}>
+`}
+>
   <Story name="Default" height="275px">
     {`
       <div class="container-fluid">
