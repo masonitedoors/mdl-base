@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   stories: ['../docs/**/*.stories.(js|mdx)'],
   addons: [
@@ -7,6 +5,5 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-backgrounds',
     '@storybook/addon-actions',
-    'storybook-dark-mode',
   ],
 };
