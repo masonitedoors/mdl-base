@@ -1,4 +1,16 @@
 module.exports = {
   stories: ['../docs/**/*.stories.(js|mdx)'],
-  addons: ['@storybook/addon-essentials'],
+  addons: [
+    {
+      name: '@storybook/addon-a11y',
+      options: {},
+    },
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        controls: false,
+        actions: false,
+      },
+    },
+  ],
 };
