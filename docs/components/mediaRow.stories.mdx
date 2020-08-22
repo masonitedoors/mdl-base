@@ -1,26 +1,11 @@
-import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import { Canvas, Story, Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Media Row" />
 
 # Media Row
 
-<Preview mdxSource={`
-  <div class="container-fluid">
-    <div class="media-row">
-      <div
-        class="media-row__image"
-        aria-hidden="true"
-        style="background-image: url('https://embed.widencdn.net/img/masonite/oj6r2o4p99/exact/Exterior-Doors_Residential.png');"
-      ></div>
-      <div class="media-row__content">
-        <h2>Livingston <br />Interior Door</h2>
-        <p>Enhance interior aesthetics with our popular interior doors.</p>
-        <a href="#">Link Here</a>
-      </div>
-    </div>
-  </div>
-`}>
-  <Story name="Default" height="500px">
+<Canvas>
+  <Story name="Default">
     {`
       <div class="container-fluid">
         <div class="media-row">
@@ -38,27 +23,12 @@ import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 ## Reversed
 
-<Preview mdxSource={`
-  <div class="container-fluid">
-    <div class="media-row media-row--reversed">
-      <div
-        class="media-row__image"
-        aria-hidden="true"
-        style="background-image: url('https://embed.widencdn.net/img/masonite/oj6r2o4p99/exact/Exterior-Doors_Residential.png');"
-      ></div>
-      <div class="media-row__content">
-        <h2>Livingston <br />Interior Door</h2>
-        <p>Enhance interior aesthetics with our popular interior doors.</p>
-        <a href="#">Link Here</a>
-      </div>
-    </div>
-  </div>
-`}>
-  <Story name="Reversed" height="500px">
+<Canvas>
+  <Story name="Reversed">
     {`
       <div class="container-fluid">
         <div class="media-row media-row--reversed">
@@ -76,4 +46,4 @@ import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>

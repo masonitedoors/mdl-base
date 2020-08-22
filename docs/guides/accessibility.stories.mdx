@@ -1,6 +1,6 @@
-import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import { Canvas, Story, Meta } from '@storybook/addon-docs/blocks';
 
-<Meta title="Overview/Accessibility" />
+<Meta title="Guides/Accessibility" />
 
 # Accessibility
 
@@ -10,15 +10,8 @@ A brief overview of this frameworks features and limitations for the creation of
 
 Content which should be visually hidden, but remain accessible to assistive technologies such as screen readers, can be styled using the `.visually-hidden` class. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.
 
-<Preview
-  mdxSource={`
-  <a href="https://example.org">
-    Read more
-    <span class="visually-hidden"> about cute kittens</span>
-  </a>
-`}
->
-  <Story name="Visually Hidden" height="100px">
+<Canvas>
+  <Story name="Visually Hidden">
     {`
       <a href="https://example.org">
         Read more
@@ -26,21 +19,17 @@ Content which should be visually hidden, but remain accessible to assistive tech
       </a>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 For visually hidden interactive controls, such as traditional “skip” links, `.visually-hidden` can be combined with the `.visually-hidden-unless-focused` class. This will ensure that the control becomes visible once focused (for sighted keyboard users).
 
-<Preview
-  mdxSource={`
-  <a class="visually-hidden visually-hidden-unless-focused" href="#content">Skip to main content</a>
-`}
->
-  <Story name="Visually Hidden Unless Focused" height="100px">
+<Canvas>
+  <Story name="Visually Hidden Unless Focused">
     {`
       <a class="visually-hidden visually-hidden-unless-focused" href="#content">Skip to main content</a>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 ## Reduced motion
 

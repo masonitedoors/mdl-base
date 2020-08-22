@@ -31,11 +31,6 @@
   border-radius: 0.25rem;
 }
 
-// Add some padding to preview area to prevent box shadows getting chopped.
-#root {
-  padding: 20px; // Using pixels here in order to match the spacing of the underlying storybook grid that a user can toggle.
-}
-
 // Make our preview background transparent so the user can select their own background.
 body {
   background-color: transparent !important; /* stylelint-disable-line declaration-no-important */

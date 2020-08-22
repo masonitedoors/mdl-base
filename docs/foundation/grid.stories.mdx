@@ -1,4 +1,4 @@
-import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import { Canvas, Story, Meta } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 <Meta title="Foundation/Grid" />
@@ -7,32 +7,8 @@ import { action } from '@storybook/addon-actions';
 
 Our grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
-<Preview
-  mdxSource={`
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        1 of 2
-      </div>
-      <div class="col">
-        2 of 2
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        1 of 3
-      </div>
-      <div class="col">
-        2 of 3
-      </div>
-      <div class="col">
-        3 of 3
-      </div>
-    </div>
-  </div>
-`}
->
-  <Story name="Equal Width" height="275px">
+<Canvas>
+  <Story name="Equal Width">
     {`
       <div class="container">
         <div class="row">
@@ -67,25 +43,12 @@ Our grid system uses a series of containers, rows, and columns to layout and ali
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 Stack the columns on mobile by making one full-width and the other half-width.
 
-<Preview
-  mdxSource={`
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-8">
-        .col-12 .col-md-8
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-    </div>
-  </div>
-`}
->
-  <Story name="Mobile Stacked" height="275px">
+<Canvas>
+  <Story name="Mobile Stacked">
     {`
       <div class="container">
         <div class="row">
@@ -103,37 +66,12 @@ Stack the columns on mobile by making one full-width and the other half-width.
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop.
 
-<Preview
-  mdxSource={`
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-      <div class="col-6 col-md-4">
-        .col-6 .col-md-4
-      </div>
-    </div>
-  </div>
-`}
->
-  <Story name="1/3 Desktop, 1/2 Mobile" height="400px">
+<Canvas>
+  <Story name="1/3 Desktop, 1/2 Mobile">
     {`
       <div class="container">
         <div class="row">
@@ -171,25 +109,12 @@ Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop.
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>
 
 Columns are always 50% wide, on mobile and desktop.
 
-<Preview
-  mdxSource={`
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        .col-6
-      </div>
-      <div class="col-6">
-        .col-6
-      </div>
-    </div>
-  </div>
-`}
->
-  <Story name="1/2 All Viewports" height="200px">
+<Canvas>
+  <Story name="1/2 All Viewports">
     {`
       <div class="container">
         <div class="row">
@@ -207,4 +132,4 @@ Columns are always 50% wide, on mobile and desktop.
       </div>
     `}
   </Story>
-</Preview>
+</Canvas>
