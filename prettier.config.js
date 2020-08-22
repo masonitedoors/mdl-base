@@ -4,4 +4,12 @@ module.exports = {
   bracketSpacing: true,
   trailingComma: 'es5',
   singleQuote: true,
+  overrides: [
+    {
+      files: '*.stories.mdx',
+      options: {
+        tabWidth: 2,
+      },
+    },
+  ],
 };
