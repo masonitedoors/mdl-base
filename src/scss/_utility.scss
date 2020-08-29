@@ -5,3 +5,9 @@
 .visually-hidden-unless-focused {
   @extend %visually-hidden-unless-focused;
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    transition: 0s !important; /* stylelint-disable-line declaration-no-important */
+  }
+}

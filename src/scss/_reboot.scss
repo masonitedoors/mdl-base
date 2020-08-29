@@ -251,9 +251,6 @@ a {
   text-decoration: none;
   background-color: transparent; // Remove the gray background on active links in IE 10.
   transition: 0.2s;
-  @media (prefers-reduced-motion: reduce) {
-    transition: none;
-  }
 
   &:hover {
     color: var(--mdl-link-hover-color);
