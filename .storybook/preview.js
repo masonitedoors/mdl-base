@@ -3,7 +3,6 @@ import '!style-loader!css-loader!sass-loader!./../src/scss/mdl-core.scss';
 import '!style-loader!css-loader!sass-loader!./preview.scss';
 
 export const parameters = {
-  viewMode: 'docs',
   layout: 'padded',
   docs: {
     transformSource: (src) => sanitizeSource(src),
