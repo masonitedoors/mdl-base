@@ -12,7 +12,9 @@
   <a href="https://storybook.js.org/">
     <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg" alt="Maintained with Storybook" />
   </a>
-
+  <a href="https://app.netlify.com/sites/mdl-core/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/bbc6bffc-da6c-472f-b4d7-8246388b4fdd/deploy-status" alt="Netlify Status">
+  </a>
 </p>
 
 ## Getting Started
