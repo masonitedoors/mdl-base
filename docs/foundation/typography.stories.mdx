@@ -63,11 +63,28 @@ These are basics that are used for internal and external projects. But, the exte
 
 ## Blockquotes
 
+For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
+
 <Canvas>
   <Story name="Blockquote">
     {`
-      <blockquote>
-        <p class="blockquote">Show mangled quartz flip vibe exactly</p>
+      <blockquote class="blockquote">
+        <p>Show mangled quartz flip vibe exactly</p>
+      </blockquote>
+    `}
+  </Story>
+</Canvas>
+
+### Naming a source
+
+Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
+
+<Canvas>
+  <Story name="Naming a source">
+    {`
+      <blockquote class="blockquote">
+        <p>Show mangled quartz flip vibe exactly</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     `}
   </Story>
