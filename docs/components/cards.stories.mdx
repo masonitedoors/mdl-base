@@ -1,0 +1,83 @@
+import { Canvas, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="Components/Cards" />
+
+# Card
+
+Card metaphors are very helpful for users when experiencing digital products. We like to base our card understanding how **Material and Apple** approaches cards.
+
+<Canvas>
+  <Story name="Default">
+    {`
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="With Title">
+    {`
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Lorem Ipsum Arumest</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="With Title + Image">
+    {`
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" alt="" src="https://embed.widencdn.net/img/masonite/ck3iflk38l/640x425px@1x/Ybor-Office_Lobby_27.jpg">
+              <div class="card-body">
+                <h2 class="card-title">Lorem Ipsum Arumest</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `}
+  </Story>
+</Canvas>
